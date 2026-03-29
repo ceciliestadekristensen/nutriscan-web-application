@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriScan - Product Categories</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="left-aligned-page">
+
   <header id="header-section">
-    <div class="logo">
-      <img src="../images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
-      <div>
-        <h1 onclick="goToHomepage()">NutriScan</h1>
-        <p onclick="goToHomepage()">One click away from a healthier future</p>
+    <div class="logo" onclick="window.location.href='../index.html'">
+      <img src="../images/logo.PNG" alt="NutriScan Logo">
+      <div class="logo-text">
+        <h1>NutriScan</h1>
+        <p>One click away from a healthier future</p>
       </div>
     </div>
 
@@ -32,61 +33,59 @@
       <a href="myprofile.html">My profile</a>
     </nav>
 
-    <div class="auth-links">
-      <a href="login.html">Login</a>
+    <div id="userArea">
+      <a href="login.html">Log in</a>
       <a href="signup.html">Sign up</a>
     </div>
   </header>
 
   <main id="main-section">
     <h2>Categories (A-Z)</h2>
+
     <div class="category-list">
       <ul>
         <li><a href="beverages.html">Beverages</a></li>
-        <li><a href="category_bread.html">Bread</a></li>
-        <li><a href="category_cakes.html">Cakes</a></li>
-        <li><a href="category_candy.html">Candy</a></li>
-        <li><a href="category_cereal.html">Cereals</a></li>
-        <li><a href="dairy.html">Dairy</a></li>
-        <li><a href="category_desserts.html">Desserts</a></li>
-        <li><a href="category_fish.html">Fish</a></li>
+        <li><a href="#">Bread</a></li>
+        <li><a href="#">Cakes</a></li>
+        <li><a href="#">Candy</a></li>
+        <li><a href="#">Cereals</a></li>
+        <li><a href="#">Dairy</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Fish</a></li>
         <li><a href="frozenfoods.html">Frozen food</a></li>
-        <li><a href="category_fruits.html">Fruits</a></li>
-        <li><a href="category_meat.html">Meat</a></li>
-        <li><a href="category_prepared_foods.html">Prepared foods</a></li>
-        <li><a href="category_preserves.html">Preserves</a></li>
-        <li><a href="category_snacks.html">Snacks</a></li>
-        <li><a href="category_spices.html">Spices</a></li>
-        <li><a href="category_vegetables.html">Vegetables</a></li>
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Meat</a></li>
+        <li><a href="#">Prepared foods</a></li>
+        <li><a href="#">Preserves</a></li>
+        <li><a href="#">Snacks</a></li>
+        <li><a href="#">Spices</a></li>
+        <li><a href="#">Vegetables</a></li>
       </ul>
     </div>
   </main>
 
   <section id="product-section">
     <h2>Available Products</h2>
+
     <div id="product-list">
-      <div class="product-item" data-tags="Sugar, Fat, Citrus">
-        <h3>Redbull</h3>
+      <div class="product-item" data-tags="nutrition-sugar,nutrition-fat,allergies-citrus">
+        <h3><a href="product_redbull.html">RedBull</a></h3>
       </div>
-      <div class="product-item" data-tags="Gluten,Sugar">
-        <h3></h3>
+
+      <div class="product-item" data-tags="nutrition-sugar">
+        <h3><a href="product_booster.html">Booster</a></h3>
       </div>
-      <div class="product-item" data-tags="Nuts,Fat">
-        <h3></h3>
+
+      <div class="product-item" data-tags="nutrition-sugar">
+        <h3><a href="product_monster.html">Monster</a></h3>
       </div>
     </div>
 
-    <div id="active-filters" style="margin-top: 20px;">
+    <div id="active-filters">
       <h3>Active Filters:</h3>
       <ul id="active-filters-list"></ul>
     </div>
   </section>
-
-  <script>
-    function goToHomepage() {
-      window.location.href = "../index.html";
-    }
-  </script>
 
   <script src="../js/script.js"></script>
 </body>
