@@ -4,27 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriScan</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="centered-page">
 
-  <!-- Header -->
   <header id="header-section">
-    <div class="logo">
+    <div class="logo" onclick="window.location.href='index.html'">
       <img src="images/logo.PNG" alt="NutriScan Logo">
-      <div>
-        <h1 onclick="window.location.href='index.html'">NutriScan</h1>
-        <p onclick="window.location.href='index.html'">One click away from a healthier future</p>
+      <div class="logo-text">
+        <h1>NutriScan</h1>
+        <p>One click away from a healthier future</p>
       </div>
     </div>
 
-    <!-- Navigation -->
     <nav>
       <a href="index.html"><b>Home</b></a>
 
@@ -42,47 +35,29 @@
       <a href="pages/myprofile.html">My profile</a>
     </nav>
 
-    <!-- User -->
     <div id="userArea">
       <a href="pages/login.html">Log in</a>
       <a href="pages/signup.html">Sign up</a>
     </div>
   </header>
 
-  <!-- Main -->
   <main id="main-section">
     <h2>What am I eating?</h2>
 
-    <!-- Search -->
     <div class="search-bar">
       <input type="text" id="search-bar" placeholder="Type your product here">
       <button onclick="searchProduct()">Search</button>
     </div>
 
-    <script>
-      function searchProduct() {
-        const searchInput = document.getElementById("search-bar").value.toLowerCase().trim();
-
-        if (searchInput === "redbull") {
-          window.location.href = "pages/product_redbull.html";
-        } else if (searchInput === "booster") {
-          window.location.href = "pages/product_booster.html";
-        } else {
-          alert("Product not found!");
-        }
-      }
-    </script>
-
-    <!-- Carousel -->
     <div class="carousel">
       <div class="carousel-images">
         <a href="pages/beverages.html"><img src="images/beverage.png" alt="Beverage"></a>
-        <a href="pages/product_2.html"><img src="images/bread.png" alt="Bread"></a>
-        <a href="pages/product_3.html"><img src="images/candy.png" alt="Candy"></a>
+        <a href="pages/products_all.html"><img src="images/bread.png" alt="Bread"></a>
+        <a href="pages/products_all.html"><img src="images/candy.png" alt="Candy"></a>
         <a href="pages/dairy.html"><img src="images/dairy.png" alt="Dairy"></a>
-        <a href="pages/product_1.html"><img src="images/fish.png" alt="Fish"></a>
+        <a href="pages/products_all.html"><img src="images/fish.png" alt="Fish"></a>
         <a href="pages/frozenfoods.html"><img src="images/frozen.png" alt="Frozen"></a>
-        <a href="pages/product_1.html"><img src="images/meat.png" alt="Meat"></a>
+        <a href="pages/products_all.html"><img src="images/meat.png" alt="Meat"></a>
       </div>
 
       <button class="prev">❮</button>
@@ -90,15 +65,12 @@
     </div>
   </main>
 
-  <!-- Emoji -->
   <div class="emojis">
     <div class="emoji">
       <img src="images/emoji.png" alt="emoji">
     </div>
   </div>
 
-  <!-- JS -->
   <script src="js/script.js"></script>
-
 </body>
 </html>
