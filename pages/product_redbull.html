@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriScan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <title>NutriScan - RedBull</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="left-aligned-page">
 
-<!-- Header Section -->
-<header id="header-section">
-  <div class="logo">
-    <img src="Images/logo_2.PNG" alt="NutriScan Logo">
-    <div>
-      <h1 onclick="goToHomepage()">NutriScan</h1>
-      <p onclick="goToHomepage()">One click away from a healthier future</p>
+  <header id="header-section">
+    <div class="logo" onclick="window.location.href='../index.html'">
+      <img src="../images/logo.PNG" alt="NutriScan Logo">
+      <div>
+        <h1>NutriScan</h1>
+        <p>One click away from a healthier future</p>
+      </div>
     </div>
-  </div>
+
     <nav>
-      <a href="homepage.html">Home</a>
+      <a href="../index.html">Home</a>
       <div class="dropdown">
         <a href="products_all.html"><b>Products</b> &#11206;</a>
         <div class="dropdown-content">
@@ -32,139 +32,63 @@
       <a href="contactus.html">Contact us</a>
       <a href="myprofile.html">My profile</a>
     </nav>
-    <div class="auth-links">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
+
+    <div id="userArea">
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign up</a>
     </div>
   </header>
 
-  <div class="header-search-bar">
-    <input type="text" placeholder="Search products..." />
-    <button>Search</button>
-  </div>
+  <main class="product-page">
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="products_all.html">Product categories</a></li>
+        <li><a href="beverages.html">Beverages</a></li>
+        <li><a href="energydrinks.html">Energy drinks</a></li>
+        <li>RedBull</li>
+      </ul>
+    </nav>
 
-  
-  <nav> <!-- breadcrumb-->
-    <ul class="breadcrumb">
-      <li><a href="products_all.html">Product categories </a></li>
-      <li><a href="beverages.html">Beverages </a></li>
-      <li><a href="energydrinks.html">Energy drinks </a></li>
-      <li>Redbull</li>
-    </ul>
-  </nav>
+    <section class="product-card">
+      <div class="product-image-wrap">
+        <img class="product-main-image redbull-img" src="../images/redbull.png" alt="RedBull can">
+      </div>
 
-  <!--Redbull info-->
-  <body class="left-aligned-page">
-    <main id="main-section">
-      <h1>RedBull, 355 ml</h1>
-      <div class="content">
-        <img id="product-img" src="Images/redbull.png" alt="Product Image">
-      <h2>What's in the product?</h2>
-        <head>
-          <title>Nutritional data</title>
-          <style>
-            table {
-              border-collapse: collapse;
-              width: 35%;
-            }
-            th, td {
-              border: 1px solid black;
-              padding: 8px;
-              text-align: left;
-            }
-            th {
-              background-color: #f4f4f4;
-            }
-          </style>
-        </head>
-        <body>
-          <table>
-            <thead>
-              <tr>
-                <th>Nutritional data</th>
-                <th>Pr. 100g/ml</th>
-                <th>In total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Energy</td>
-                <td>45 kcal</td>
-                <td>160 kcal</td>
-              </tr>
-              <tr>
-                <td>Fat</td>
-                <td>0 g</td>
-                <td>0 g</td>
-              </tr>
-              <tr>
-                <td>Saturated fat</td>
-                <td>0 g</td>
-                <td>0 g</td>
-              </tr>
-              <tr>
-                <td>Carbohydrates</td>
-                <td>11 g</td>
-                <td>39 g</td>
-              </tr>
-              <tr>
-                <td>Sugar</td>
-                <td>11 g</td>
-                <td>39 g</td>
-              </tr>
-              <tr>
-                <td>Protein</td>
-                <td>0 g</td>
-                <td>0 g</td>
-              </tr>
-              <tr>
-                <td>Salt</td>
-                <td>0.1 g</td>
-                <td>0.4 g</td>
-              </tr>
-              <tr>
-                <td>vitamins</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Vitamin B6</td>
-                <td>0.07 µg</td>
-                <td>0.25 µg</td>
-              </tr>
-              <tr>
-                <td>Vitamin B12</td>
-                <td>0.4 µg</td>
-                <td>1.4 µg</td>
-              </tr>
-              <tr>
-                <td>Niacin</td>
-                <td>8 mg</td>
-                <td>28 mg</td>
-              </tr>
-              <tr>
-                <td>Pantothenic acid</td>
-                <td>2 mg</td>
-                <td>7 mg</td>
-              </tr>
-            </tbody>
-          </table>
-        </body>
+      <div class="product-info">
+        <h1>RedBull, 355 ml</h1>
 
-      <h2>Overall rating:</h2>
-        <p >overall rating... </p>
+        <h2>What's in the product?</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nutritional data</th>
+              <th>Per 100 ml</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Energy</td><td>45 kcal</td><td>160 kcal</td></tr>
+            <tr><td>Fat</td><td>0 g</td><td>0 g</td></tr>
+            <tr><td>Saturated fat</td><td>0 g</td><td>0 g</td></tr>
+            <tr><td>Carbohydrates</td><td>11 g</td><td>39 g</td></tr>
+            <tr><td>Sugar</td><td>11 g</td><td>39 g</td></tr>
+            <tr><td>Protein</td><td>0 g</td><td>0 g</td></tr>
+            <tr><td>Salt</td><td>0.1 g</td><td>0.4 g</td></tr>
+            <tr><td>Vitamin B6</td><td>0.07 µg</td><td>0.25 µg</td></tr>
+            <tr><td>Vitamin B12</td><td>0.4 µg</td><td>1.4 µg</td></tr>
+            <tr><td>Niacin</td><td>8 mg</td><td>28 mg</td></tr>
+            <tr><td>Pantothenic acid</td><td>2 mg</td><td>7 mg</td></tr>
+          </tbody>
+        </table>
 
-      <h2>Recommendation: </h2>
-        <p >E.g. small amounts, alternative products, etc. </p>
-    </main>
-  </body>
+        <h2>Overall rating</h2>
+        <p>Yellow. RedBull contains quite a lot of sugar, but no fat and only a small amount of salt.</p>
 
+        <h2>Recommendation</h2>
+        <p>Best enjoyed in moderation. It should be seen as an occasional energy drink rather than an everyday drink.</p>
+      </div>
+    </section>
+  </main>
 
-   <!-- Tree Emoji Section -->
-  <div class="emojis">
-    <div class="emoji">
-      <img src="Images/emoji.png" alt="emoji">
-    </div>
-  </div>
-  <link rel="stylesheet" href="styles.css">
-
+</body>
+</html>
