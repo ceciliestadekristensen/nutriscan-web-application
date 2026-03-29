@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - NutriScan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
   <div class="login-container">
     <h1>Login</h1>
+
     <form id="loginForm">
+      <label for="username">Username</label>
       <input type="text" id="username" placeholder="Username" required>
+
+      <label for="password">Password</label>
       <input type="password" id="password" placeholder="Password" required>
+
       <button type="submit">Login</button>
     </form>
+
     <p id="loginMessage"></p>
   </div>
 
@@ -22,16 +29,19 @@
     document.getElementById('loginForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const loginMessage = document.getElementById('loginMessage');
 
-      if (username === 'demo' && password === 'password') {
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const user = users.find(user => user.username === username && user.password === password);
+
+      if (user) {
         localStorage.setItem('loggedInUser', username);
         window.location.href = '../index.html';
       } else {
-        const loginMessage = document.getElementById('loginMessage');
         loginMessage.textContent = 'Invalid username or password.';
-        loginMessage.style.color = 'red';
+        loginMessage.className = 'error-message';
       }
     });
   </script>
