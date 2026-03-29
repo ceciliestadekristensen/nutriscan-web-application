@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriScan - My Profile</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="left-aligned-page">
+
   <header id="header-section">
-    <div class="logo">
-      <img src="../images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
-      <div>
-        <h1 onclick="goToHomepage()">NutriScan</h1>
-        <p onclick="goToHomepage()">One click away from a healthier future</p>
+    <div class="logo" onclick="window.location.href='../index.html'">
+      <img src="../images/logo.PNG" alt="NutriScan Logo">
+      <div class="logo-text">
+        <h1>NutriScan</h1>
+        <p>One click away from a healthier future</p>
       </div>
     </div>
 
@@ -33,54 +34,52 @@
     </nav>
 
     <div id="userArea">
-      <a href="login.html" id="loginLink">Log in</a>
-      <a href="signup.html" id="signupLink">Sign up</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign up</a>
     </div>
   </header>
 
   <main id="main-section">
     <h1>My Profile</h1>
     <p>
-      At NutriScan, we hope to help make food labels easier to understand and tailored to your needs. <br>
-      <b>Customize your preferences:</b> Select allergies, dietary preferences, or ingredients you want to watch out for. <br>
-      <b>Stay alert with visual highlights:</b> If a product contains something you’re tracking, we’ll highlight it directly in the content description of products you search for.
+      At NutriScan, we help make food labels easier to understand and tailored to your needs.
+      Choose filters below and we will highlight matching products.
     </p>
 
-    <section id="filter-section" class="centered-page">
+    <section id="filter-section">
       <h2>Apply Filters</h2>
+
       <form id="filter-form">
         <h3>Allergies</h3>
-        <label><input type="checkbox" id="allergies-lactose"> Lactose</label><br>
-        <label><input type="checkbox" id="allergies-nuts"> Nuts</label><br>
-        <label><input type="checkbox" id="allergies-gluten"> Gluten</label><br>
-        <label><input type="checkbox" id="allergies-citrus"> Citrus</label><br>
-        <label><input type="checkbox" id="allergies-shellfish"> Shellfish</label><br>
-        <label><input type="checkbox" id="allergies-eggs"> Eggs</label><br>
+        <label><input type="checkbox" id="allergies-lactose"> Lactose</label>
+        <label><input type="checkbox" id="allergies-nuts"> Nuts</label>
+        <label><input type="checkbox" id="allergies-gluten"> Gluten</label>
+        <label><input type="checkbox" id="allergies-citrus"> Citrus</label>
+        <label><input type="checkbox" id="allergies-shellfish"> Shellfish</label>
+        <label><input type="checkbox" id="allergies-eggs"> Eggs</label>
 
         <h3>Nutrition label</h3>
-        <label><input type="checkbox" id="nutrition-sodium"> Sodium</label><br>
-        <label><input type="checkbox" id="nutrition-protein"> Protein</label><br>
-        <label><input type="checkbox" id="nutrition-carbohydrates"> Carbohydrates</label><br>
-        <label><input type="checkbox" id="nutrition-sugar"> Sugar</label><br>
-        <label><input type="checkbox" id="nutrition-fat"> Fat</label><br>
+        <label><input type="checkbox" id="nutrition-sodium"> Sodium</label>
+        <label><input type="checkbox" id="nutrition-protein"> Protein</label>
+        <label><input type="checkbox" id="nutrition-carbohydrates"> Carbohydrates</label>
+        <label><input type="checkbox" id="nutrition-sugar"> Sugar</label>
+        <label><input type="checkbox" id="nutrition-fat"> Fat</label>
 
         <h3>General</h3>
-        <label><input type="checkbox" id="general-noneeded"> No needed</label><br>
+        <label><input type="checkbox" id="general-noneeded"> No needed</label>
 
         <button type="button" id="apply-filters">Apply</button>
         <button type="button" id="clear-filters">Clear All</button>
       </form>
 
-      <div id="filtered-results" style="margin-top: 20px;"></div>
-      <ul id="active-filters-list"></ul>
+      <div id="filtered-results"></div>
+
+      <div id="active-filters">
+        <h3>Active Filters</h3>
+        <ul id="active-filters-list"></ul>
+      </div>
     </section>
   </main>
-
-  <script>
-    function goToHomepage() {
-      window.location.href = "../index.html";
-    }
-  </script>
 
   <script src="../js/script.js"></script>
 </body>
