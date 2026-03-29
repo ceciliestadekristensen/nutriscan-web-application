@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriScan</title>
+  <title>NutriScan - Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header id="header-section">
     <div class="logo">
-      <img src="Images/logo_2.PNG" alt="NutriScan Logo">
+      <img src="../images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
       <div>
         <h1 onclick="goToHomepage()">NutriScan</h1>
         <p onclick="goToHomepage()">One click away from a healthier future</p>
       </div>
     </div>
+
     <nav>
-      <a href="homepage.html">Home</a>
+      <a href="../index.html">Home</a>
       <div class="dropdown">
         <a href="products_all.html">Products &#11206;</a>
         <div class="dropdown-content">
@@ -31,31 +31,36 @@
       <a href="contactus.html"><b>Contact us</b></a>
       <a href="myprofile.html">My profile</a>
     </nav>
+
     <div class="auth-links">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign up</a>
     </div>
   </header>
 
-<body>
+  <main id="main-section">
     <h1>Contact us</h1>
-    <p>If you have any questions regarding the website or product information <br />
-       you're always welcome to contact us on the mail written below.<br />
-      We always answer within 24 hours.</p>
+    <p>
+      If you have any questions regarding the website or product information,<br>
+      you're always welcome to contact us on the email written below.<br>
+      We always answer within 24 hours.
+    </p>
 
-    <p>Email: <u>info@nutriscan.com</u></p>
-    <a href="mailto:address"></a>  <!-- actually opens mail app, just a fun little detail-->
-   
-</body> 
+    <p>Email: <a href="mailto:info@nutriscan.com"><u>info@nutriscan.com</u></a></p>
+  </main>
 
-<!-- Tree Emoji Section -->
-<div class="emojis">
+  <div class="emojis">
     <div class="emoji">
-      <img src="Images/emoji.png" alt="emoji">
+      <img src="../images/emoji.png" alt="emoji">
     </div>
   </div>
 
-  <!-- Link to the JavaScript file -->
-  <script src="script.js"></script>
+  <script>
+    function goToHomepage() {
+      window.location.href = "../index.html";
+    }
+  </script>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>
