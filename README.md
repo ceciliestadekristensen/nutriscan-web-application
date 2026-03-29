@@ -29,16 +29,35 @@ This project aims to bridge the gap between available nutritional data and actua
 
 ---
 
-## Design Principles
+## My Contributions
 
-The application is built around the following UX principles:
+My main contributions include:
 
-* **Simplicity** – complex data is reduced to clear, readable formats
-* **Accessibility** – easy to understand for users with different levels of knowledge
-* **Efficiency** – users can quickly scan and understand a product
-* **Consistency** – uniform layout across all pages
+* **Product Pages**
 
-These principles are based on insights from user research (questionnaires and interviews), where users expressed a need for clear visualisation and faster decision making.
+  * Designed and implemented structured product layouts
+  * Built reusable components for displaying nutritional data
+  * Improved readability and visual hierarchy of product information
+
+* **Search Functionality**
+
+  * Implemented the search bar feature
+  * Focused on making product discovery faster and more intuitive
+
+* **Navigation System**
+
+  * Developed and refined the main navigation structure
+  * Improved user flow between pages and categories
+
+* **Carousel (Homepage)**
+
+  * Implemented and styled the image carousel
+  * Ensured smooth transitions and consistent layout
+
+* **UI Improvements & Styling**
+
+  * Adjusted layout, spacing, and responsiveness
+  * Standardized product image sizes and alignment
 
 ---
 
@@ -133,12 +152,15 @@ nutriscan/
 
 ## Screenshots
 
-<img src="images/frontpage.png" width="250">
-<img src="images/products.png" width="250">
-<img src="images/redbull.png" width="250">
-<img src="images/booster.png" width="250">
-<img src="images/filters.png" width="250">
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
+  <img src="images/frontpage.png" width="45%">
+  <img src="images/filters.png" width="45%">
+
+  <img src="images/redbull.png" width="45%">
+  <img src="images/booster.png" width="45%">
+
+</div>
 ---
 
 ## What I Learned
