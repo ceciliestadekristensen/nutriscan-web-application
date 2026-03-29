@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <!-- Meta information -->
+  <meta charset="UTF-8"> <!-- specifies character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures the site is mobile-friendly -->
+  <title>NutriScan</title> <!-- title of the web page -->
+
+  <!-- link to Google Font for styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header-section">
+    <!-- Logo and slogan -->
+    <div class="logo">
+      <img src="Images/logo_2.PNG" alt="NutriScan Logo">
+      <div>
+        <h1 onclick="goToHomepage()">NutriScan</h1> <!-- Clickable title redirects to homepage. Clickable using a JavaScript function -->
+        <p onclick="goToHomepage()">One click away from a healthier future</p> <!-- Slogan -->
+      </div>
+    </div>
+
+    <!-- Navigation menu -->
+    <nav>
+      <a href="homepage.html"><b>Home</b></a>  <!-- Link to home page, href attribute= hyperlinks, tells the browser where to go. They store an URL -->
+      <!-- dropdown menu for product categories -->
+      <div class="dropdown">
+        <a href="products_all.html">Products &#11206;</a> <!-- &#11206; = hex code for an icon, here it is a downwards arrow -->
+        <div class="dropdown-content">
+          <a href="beverages.html">Beverages</a>
+          <a href="dairy.html">Dairy</a>
+          <a href="frozenfoods.html">Frozen food</a>
+        </div>
+      </div>
+      <a href="information.html">Information</a>
+      <a href="contactus.html">Contact us</a>
+      <a href="myprofile.html">My profile</a>
+    </nav>
+    <!-- User area: liunks to login and sign up -->
+    <div id="userArea">
+      <a href="login.html" id="loginLink">Log in</a>
+      <a href="signup.html" id="signupLink">Sign up</a>
+      
+  </div>
+  </header>
+
+<!-- Main Section -->
+<body class="centered-page">
+  <main id="main-section">
+    <h2>What am I eating?</h2> <!-- section title -->
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" id="search-bar" placeholder="Type your product here"> <!-- Input field for product search-->
+      <button onclick="searchProduct()">Search</button> <!-- Search button with event listener -->
+    </div>
+
+    <script>
+      function searchProduct() {
+          const searchInput = document.getElementById("search-bar").value.toLowerCase().trim();
+          console.log("User searched for:", searchInput); // Debugging
+    
+          if (searchInput === "redbull") {
+              console.log("Redirecting to: product_redbull.html");
+              window.location.href = "product_redbull.html"; 
+          } else if (searchInput === "booster") {
+              console.log("Redirecting to: product_booster.html");
+              window.location.href = "product_booster.html"; 
+          } else {
+              alert("Product not found!");
+          }
+      }
+    </script>
+
+    <!-- image carousel for product categories -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <!-- links to product category pages -->
+        <a href="beverages.html"><img src="Images/beverage.png" alt="Beverage"></a>  <!-- href = hyperlink to category, img src = image + source where the program can find the image to show -->
+        <a href="product_2.html"><img src="Images/bread.png" alt="Bread"></a>
+        <a href="product_3.html"><img src="Images/candy.png" alt="candy"></a>
+        <a href="dairy.html"><img src="Images/dairy.png" alt="Dairy"></a>
+        <a href="product_1.html"><img src="Images/fish.png" alt="Fish"></a>
+        <a href="frozenfoods.html"><img src="Images/frozen.png" alt="frozen"></a>
+        <a href="product_1.html"><img src="Images/meat.png" alt="Meat"></a>
+      </div>
+      <!-- navigation buttons for the carousel -->
+      <button class="prev">❮</button> 
+      <button class="next">❯</button>
+    </div>
+  </main>
+</body> 
+
+  <!-- Product Details Section (Initially Hidden) -->
+   <!--<div id="product-details" style="display:none;">
+    <h3 id="product-name"></h3>
+    <img id="product-image" src="" alt="Product Image" style="margin: 10px auto; display: block;">
+    <h4>What's in the product?</h4>
+    <p id="product-description"></p>
+    <ul id="nutrition-values"></ul>
+    <h4>Overall rating:</h4>
+    <img src="Images/green-smiley.png" alt="smiley green">
+    <h4>Recommendation:</h4>
+    <p id="product-recommendation"></p>
+  </div> -->
+
+  <!-- Decorative Tree Emoji Section -->
+  <div class="emojis">
+    <div class="emoji">
+      <img src="Images/emoji.png" alt="emoji">
+    </div>
+  </div>
+
+  <!-- Link to the JavaScript file for added functionality -->
+  <script src="script.js"></script> <!-- external JS file s-->
+</body>
+</html>
+

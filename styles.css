@@ -1,0 +1,594 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  /*font-family: Arial, sans-serif;*/
+  text-align: center;
+  color: #4CAF50;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 0px;
+}
+
+.logo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: #4CAF50;
+  margin: 0px;
+  text-align: left;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #000000;
+  margin: 0px;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  gap: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #4CAF50;
+  margin-left: 70px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+h3 {
+  font-size: 28px;
+  color:#333
+}
+
+p {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #000000;
+  margin-top: 40px;
+}
+
+/* Center-aligned page */
+.centered-page h2 {
+  text-align: center;
+}
+
+/* Left-aligned page */
+.left-aligned-page h2 {
+  text-align: left;
+  padding-left: 40px; /* to change margin-left */
+  margin-top: 40px;
+}
+
+.left-aligned-page h1 {
+  text-align: left;
+  padding-left: 40px; /* to change margin-left */
+}
+
+
+.left-aligned-page p {
+  text-align: left ;
+  padding-left: 40px; /* to change margin-left */
+}
+
+/*these two are literally just for bullet points on the information page */ 
+.indented-list {
+  list-style-type: disc; /* Adds bullet points */
+  margin-left: 60px; /* Adds an indent */
+  padding-left: 20px; /* Optional fine-tuning */
+  color:#000000;
+}
+
+.indented-list li {
+  margin-bottom: 10px; /* Space between list items */
+  text-align: left; /* Ensures alignment with your existing text styles */
+  color:#000000; 
+  font-size: 18px;
+}
+
+/*styles for search bar container */
+.search-bar {  /*ID name */
+  display: flex; /*makes the container a flexbox for easy alignment of its children */
+  justify-content: center; /*centers the child elements horizontally within the container */ /*makes sure input and button are perfectly centered */
+  align-items: center; /*centers the child elements vertically within the container */
+  margin: 55px auto; /*adds 55px vertical space above and below, and centers the search bar horizontally (auto) */
+  width: 50%; /*sets the search bar container to 50 % of the parent element's width */
+    /* keeps the search bar container half as wide */ 
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 15px; /* Adjusted padding to match button */
+  font-size: 16px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box; /*Ensures padding doesn't affect height */
+}
+
+.search-bar button {
+  padding: 15px; /* Match the input field's padding */
+  font-size: 16px; /* Match font size to input */
+  background-color: #ddd;
+  border: 1px solid #ccc; /* Match the border of the input field */
+  box-sizing: border-box; /* Ensure padding and border are included in size calculation */
+  border-radius: 0 25px 25px 0; /* Maintain rounded edges */
+  height: auto; /* Automatically adjust height */
+}
+
+/*OBS. this is only the search bar on product pages */
+.header-search-bar {
+  position: absolute;
+  top: 130px; /* Adjust top positioning if needed */
+  right: 80px; /* Moves it to the right corner */
+  display: flex;
+}
+
+.header-search-bar input {
+  font-size: 16px; /*adjust size of text in the input */
+  padding: 10px; /* increases padding for bigger search bar */
+  border: 1px solid #ccc; /*lighter border for better styling */
+  border-radius: 4px; /*for softer/rounder corners */
+}
+
+.header-search-bar button {
+  background-color: #45a049;
+  font-size: 16px; 
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.emojis {
+  display: flex;
+  justify-content: center;
+}
+.emoji {
+  width: 600px; /* Adjust to fit your image size */
+  height: 400px; /* Adjust to fit your image size */
+  margin-top: -50px;  /* Move the image up */
+}
+
+.emoji img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%;
+  object-fit: contain; /* Ensure the image scales well */
+  border-radius: 50%; /* Optional: Make images look circular */
+}
+
+#product-img {
+  float: right;
+  margin-left: 20px; /* Add some space between the image and the text */
+  margin-right: 200px;
+  width: 100%;
+  max-width: 500px; /* Adjust the image size if necessary */
+}
+
+/* Styling of the breadcrumb*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  padding-left: 40px; /* to change margin-left */
+}
+
+/* Display breadcrumb items side by side */
+ul.breadcrumb li {
+  display: inline;
+  
+}
+
+/* font size for all list items*/
+ul.breadcrumb li,
+ul.breadcrumb li a {
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color on mouse-over, breadcrumb */
+ul.breadcrumb li a:hover {
+  color: #4CAF50;
+  text-decoration: underline;
+}
+
+/* product page*/
+#product-details {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: -40px auto;
+  width: 80%;
+  text-align: left;
+}
+
+#product-details img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* carousel container */
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 60%;
+  max-width: 900px;
+  height: 300px;
+  margin: auto;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Carousel images */
+.carousel-images {
+  display: flex; /* Align images in a row */
+  transition: transform 1.5s ease; /* Smooth transition */
+  width: 100%;
+}
+
+.carousel-images img {
+  width: 100; /* Each image takes up full carousel width */
+  height: 100%; /*images fills out the carousel */
+  object-fit: cover; /*ensures images scale properly */
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Category List */
+.category-list {
+  margin: 50px 0;
+  padding-left: 15px;
+  max-width: 1300px;
+}
+
+.category-list ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.category-list li {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.category-list a {
+  text-decoration: none; /* Remove underline */
+  color: #4CAF50; /* Link color */
+  transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+  color: #2f6831; /* Darker color on hover */
+}
+
+.category-list ul {
+  display: grid; /* Grid layout for better alignment */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjust based on available space */
+  gap: 10px;
+}
+
+/* Til brugerpræferencer */
+/* Generelle stilarter */
+/* Overordnet styling til filter-sektionen */
+#filter-section {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 700px; /* Øget max-width for at give mere plads til horisontale elementer */
+  background: #f9f9f9;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Overskrift for filter-sektionen */
+#filter-section h2 {
+  font-size: 1.6em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Kategorititel */
+h3 {
+  margin-top: 20px;
+  color: #555;
+  font-size: 1.2em;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Container til filtrene - ændret til at vise horisontalt */
+#filter-section form {
+  display: flex;
+  flex-wrap: wrap; /* Sørger for at elementerne kan brydes til næste linje */
+  gap: 15px; /* Gap mellem filtrene */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Checkboxes og labels styling */
+#filter-section label {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #444;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+#filter-section input[type="checkbox"] {
+  margin-right: 5px;
+  accent-color: #42a5f5;
+  transform: scale(1.1); /* Lidt større checkbox */
+  cursor: pointer;
+}
+
+/* Disabled checkbox styling */
+#filter-section input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Apply-knappen (grøn) */
+#apply-filters {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px; /* Giver lidt afstand fra filtrene */
+  text-align: center;
+}
+
+#apply-filters:hover {
+  background-color: #45a049;
+}
+
+/* Clear Filters-knappen (rød) */
+#clear-filters {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#clear-filters:hover {
+  background-color: #e53935;
+}
+
+/* Styling for resultat-container */
+#filtered-results {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for ul og li */
+#filtered-results ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+#filtered-results li {
+  margin: 2px 0;
+}
+
+/* Styling for 'No needed' checkbox, when disabled */
+#general-noneeded:disabled + label {
+  color: #aaa;
+}
+/* Styling af produkter, der indeholder et valgt filter */
+.product-item.filtered {
+  border: 3px solid #4CAF50; /* Grøn ramme, når produktet indeholder et valgt filter */
+  background-color: #f0f9f0; /* Let grøn baggrund */
+  position: relative;
+  padding: 20px;
+}
+
+.product-item.filtered::after {
+  content: "Contains Selected Filter";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styling af mærkaterne for filtrene */
+.filter-tag {
+  background-color: #4CAF50; /* Grøn baggrund for filter-tag */
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin: 5px;
+  display: inline-block;
+}
+.filtered {
+  border: 2px solid green;
+  background-color: #d0f0d0; /* Grønlig baggrund for filtrerede produkter */
+}
+
+/* Container for the text and button */
+#text-container {
+  width: 40%; /* Match the width of the table for alignment */
+  margin-top: 20px; /* Add some spacing between the table and this section */
+  margin-left: 20px; /* Align it to the left */
+  text-align: left; /* Ensure the text aligns to the left */
+}
+
+/* test of see more button */
+[id^="more"] {
+    display: none;
+}
+
+[id^="myBtn"] {  /*  ^ det der begynder med myBtn, der skal alle inkluderede elementer med id MyBtn, så skal den følge det som står herunder */
+  margin-top: 10px; /* Add space between the paragraph and the button */
+  vertical-align: middle; /* Align the button with the text vertically */
+  cursor: pointer; /* Add a pointer cursor for better UX */
+  display: inline-block; 
+  background-color: #45a049; /*green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for a nice button size */
+  font-size: 16px; /* Make the text larger */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.table-container {
+  display: block;
+  width: 40%;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+table {
+  width: 100%;
+  border:0.5px solid black;
+  border-collapse: collapse;
+  color: #000000;
+}
+
+th,td {
+  border: 0.5px solid black;
+  padding: 2px;
+  text-align: left;
+  color: #000000;
+}
+
+/* circles for color code on product sides */
+.circle { /*.circle is the class name from HTML */ 
+  display: inline-block; /*Allows the circle to appear inline with text or other elements */
+  width: 16px; /*sets the width of the circle */
+  height: 16px; /*sets the height of the circle */
+  border-radius: 50%; /* Makes the element a circle */
+  margin-left: 5px; /* Adds spacing between the text and the circle */
+  vertical-align: middle; /* Aligns the circle vertically with surrounding text */
+  border: 1px solid black; /* Adds a thin black outline/border around the circle */
+}
+
+/*specific stye for yellow circle */
+.circle.yellow {
+  background-color: yellow; /*fills circle with yellow color */
+}
+
+.circle.green {
+  background-color: green;
+}
+
+.circle.red {
+  background-color: red;
+}
+
