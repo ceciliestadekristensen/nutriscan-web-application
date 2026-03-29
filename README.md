@@ -2,7 +2,7 @@
 
 ## Overview
 
-NutriScan is a frontend web application developed to improve **consumer understanding of nutritional information** on food products.
+NutriScan is a frontend web application developed to improve consumer understanding of nutritional information on food products.
 
 The project is based on research showing that many consumers struggle to interpret nutrition labels due to complex terminology, lack of time, and low health literacy. NutriScan addresses this by presenting nutritional data in a simplified, visual, and user-friendly format.
 
