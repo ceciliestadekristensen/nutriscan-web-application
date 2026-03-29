@@ -3,63 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriScan</title>
+  <title>NutriScan - Dairy</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-  <!-- Header Section -->
+<body class="left-aligned-page">
   <header id="header-section">
     <div class="logo">
-      <img src="Images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
+      <img src="../images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
       <div>
         <h1 onclick="goToHomepage()">NutriScan</h1>
         <p onclick="goToHomepage()">One click away from a healthier future</p>
       </div>
     </div>
+
     <nav>
-      <a href="homepage.html">Home</a>
+      <a href="../index.html">Home</a>
       <div class="dropdown">
-        <a href="products_all.html"><b>Products </b> &#11206;</a>
+        <a href="products_all.html"><b>Products</b> &#11206;</a>
         <div class="dropdown-content">
-            <a href="beverages.html">Beverages</a>
-            <a href="dairy.html">Dairy</a>
-            <a href="frozenfoods.html">Frozen food</a>
+          <a href="beverages.html">Beverages</a>
+          <a href="dairy.html">Dairy</a>
+          <a href="frozenfoods.html">Frozen food</a>
         </div>
       </div>
       <a href="information.html">Information</a>
       <a href="contactus.html">Contact us</a>
       <a href="myprofile.html">My profile</a>
     </nav>
+
     <div class="auth-links">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign up</a>
     </div>
   </header>
 
-  <nav> <!-- breadcrumb-->
+  <nav>
     <ul class="breadcrumb">
-      <li><a href="products_all.html">Product categories </a></li>
-      <li>Dairy </li>
+      <li><a href="products_all.html">Product categories</a></li>
+      <li>Dairy</li>
     </ul>
   </nav>
-  
-  <body class="left-aligned-page">
-    <main id="main-section">
-      <h2>Dairy</h2>
-      <div class="category-list">
-        <ul> 
-            <li><a href="category_butter.html">Butter</a></li>
-            <li><a href="cheeses.html">Cheese</a></li>  
-            <li><a href="category_chocolatemilk.html">Chocolate milk</a></li>
-            <li><a href="category_cream.html">Cream</a></li> 
-            <li><a href="category_icecream.html">Ice cream</a></li>
-            <li><a href="category_milk.html">Milk</a></li>
-            <li><a href="category_pudding.html">Pudding</a></li>
-            <li><a href="category_sourcream.html">Sour cream</a></li>
-            <li><a href="category_whey.html">Whey (Protein)</a></li>
-            <li><a href="category_yoghurt.html">Yoghurt</a></li>
-        </ul>
-      </div>
-    </main>
-  </body> 
+
+  <main id="main-section">
+    <h2>Dairy</h2>
+    <div class="category-list">
+      <ul>
+        <li><a href="category_butter.html">Butter</a></li>
+        <li><a href="cheeses.html">Cheese</a></li>
+        <li><a href="category_chocolatemilk.html">Chocolate milk</a></li>
+        <li><a href="category_cream.html">Cream</a></li>
+        <li><a href="category_icecream.html">Ice cream</a></li>
+        <li><a href="category_milk.html">Milk</a></li>
+        <li><a href="category_pudding.html">Pudding</a></li>
+        <li><a href="category_sourcream.html">Sour cream</a></li>
+        <li><a href="category_whey.html">Whey (Protein)</a></li>
+        <li><a href="category_yoghurt.html">Yoghurt</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function goToHomepage() {
+      window.location.href = "../index.html";
+    }
+  </script>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
