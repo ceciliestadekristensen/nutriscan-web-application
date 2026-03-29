@@ -3,42 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriScan - Sign up</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <title>Sign up - NutriScan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header id="header-section">
-    <div class="logo">
-      <img src="../images/logo_2.PNG" alt="NutriScan Logo" onclick="goToHomepage()">
-      <div>
-        <h1 onclick="goToHomepage()">NutriScan</h1>
-        <p onclick="goToHomepage()">One click away from a healthier future</p>
-      </div>
-    </div>
 
-    <nav>
-      <a href="../index.html">Home</a>
-      <div class="dropdown">
-        <a href="products_all.html">Products &#11206;</a>
-        <div class="dropdown-content">
-          <a href="beverages.html">Beverages</a>
-          <a href="dairy.html">Dairy</a>
-          <a href="frozenfoods.html">Frozen food</a>
-        </div>
-      </div>
-      <a href="information.html">Information</a>
-      <a href="contactus.html">Contact us</a>
-    </nav>
+  <div class="signup-container">
+    <h1>Sign up</h1>
 
-    <div id="userArea">
-      <a href="login.html" id="loginLink">Log in</a>
-      <a href="signup.html" id="signupLink">Sign up</a>
-    </div>
-  </header>
-
-  <main id="main-section">
-    <h2>Sign up</h2>
     <form id="signupForm">
       <label for="newUsername">Username</label>
       <input type="text" id="newUsername" name="username" required>
@@ -51,46 +24,21 @@
 
       <button type="submit">Sign up</button>
     </form>
+
     <p id="signupMessage"></p>
-  </main>
+  </div>
 
   <script>
-    function goToHomepage() {
-      window.location.href = "../index.html";
-    }
-
-    window.addEventListener('DOMContentLoaded', function() {
-      const userArea = document.getElementById('userArea');
-      const loggedInUser = localStorage.getItem('loggedInUser');
-
-      if (loggedInUser) {
-        userArea.innerHTML = `
-          <div class="dropdown">
-            <a href="javascript:void(0)">${loggedInUser}</a>
-            <div class="dropdown-content">
-              <a href="user.html">Profile</a>
-              <a href="javascript:void(0)" id="logoutLink">Log out</a>
-            </div>
-          </div>
-        `;
-
-        document.getElementById('logoutLink').addEventListener('click', function() {
-          localStorage.removeItem('loggedInUser');
-          window.location.href = '../index.html';
-        });
-      }
-    });
-
     document.getElementById('signupForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const newUsername = document.getElementById('newUsername').value;
-      const newPassword = document.getElementById('newPassword').value;
-      const confirmPassword = document.getElementById('confirmPassword').value;
+      const newUsername = document.getElementById('newUsername').value.trim();
+      const newPassword = document.getElementById('newPassword').value.trim();
+      const confirmPassword = document.getElementById('confirmPassword').value.trim();
       const signupMessage = document.getElementById('signupMessage');
 
       if (newPassword !== confirmPassword) {
-        signupMessage.textContent = 'Passwords do not match';
+        signupMessage.textContent = 'Passwords do not match.';
         signupMessage.className = 'error-message';
         return;
       }
@@ -99,22 +47,21 @@
       const existingUser = users.find(user => user.username === newUsername);
 
       if (existingUser) {
-        signupMessage.textContent = 'Username already exists';
+        signupMessage.textContent = 'Username already exists.';
         signupMessage.className = 'error-message';
         return;
       }
 
       users.push({ username: newUsername, password: newPassword });
       localStorage.setItem('users', JSON.stringify(users));
-      signupMessage.textContent = 'User created successfully';
+
+      signupMessage.textContent = 'User created successfully.';
       signupMessage.className = 'success-message';
 
       setTimeout(() => {
         window.location.href = 'login.html';
-      }, 2000);
+      }, 1500);
     });
   </script>
-
-  <script src="../js/script.js"></script>
 </body>
 </html>
