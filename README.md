@@ -154,7 +154,7 @@ nutriscan/
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-  
+  <img src="images/front.png" width="45%">
   <img src="images/filters.png" width="45%">
 
   <img src="images/redbull.png" width="45%">
