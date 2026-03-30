@@ -161,22 +161,15 @@ nutriscan/
   <img src="images/booster.png" width="45%">
 
 </div>
----
-
-## What I Learned
-
-Through this project I developed skills in:
-
-* Structuring a multi-page web application
-* Translating user research into design decisions
-* Creating user-friendly interfaces for complex data
-* Working with JavaScript for dynamic functionality
-* Designing with a UX-focused mindset
 
 ---
 
 ## Project Context
 
 This project was developed as part of a university project:
+ 
+The full academic report is available here: 
 
-**"NutriScan: Enhancing Consumer Nutrition Literacy Through Technology"**
+[Download Report (PDF)](https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/report/nutriscan.pdf)
+
+
