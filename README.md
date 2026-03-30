@@ -7,11 +7,11 @@ NutriScan is a frontend web prototype exploring how nutritional information can 
 ## Demo
 
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/ceciliestadekristensen/nutriscan-web-application/main/demo/demo.gif" height="260"/> 
+  <img src="https://raw.githubusercontent.com/ceciliestadekristensen/nutriscan-web-application/main/demo/nutriscan.gif" height="260"/> 
 </p>
 
 <p align="center">
-  <a href="https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/demo/demo.mp4">
+  <a href="https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/demo/nutriscan.mp4">
     ▶ Watch full demo video
   </a>
 </p>
