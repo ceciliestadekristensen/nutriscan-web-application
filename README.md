@@ -7,7 +7,13 @@ NutriScan is a frontend web prototype exploring how nutritional information can 
 ## Demo
 
 <p align="center"> 
-  <img src="images/front.png" height="260"/> 
+  <img src="https://raw.githubusercontent.com/ceciliestadekristensen/nutriscan-web-application/main/demo/demo.gif" height="260"/> 
+</p>
+
+<p align="center">
+  <a href="https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/demo/demo.mp4">
+    ▶ Watch full demo video
+  </a>
 </p>
 
 ---
@@ -19,8 +25,7 @@ Understanding nutrition labels can be difficult due to complex terminology, time
 This project explores how a web interface can simplify nutritional information through clearer structure, visual hierarchy, and intuitive navigation.
 
 **Note:**  
-This is a non-functional prototype.
-The focus of the project is on design, user experience, and concept development, not a fully implemented system.
+This is a prototype, with focus on design, user experience, and concept development rather than a fully implemented system.
 
 ---
 
@@ -28,17 +33,18 @@ The focus of the project is on design, user experience, and concept development,
 
 The prototype includes:
 
-- A homepage with a visual carousel
-- A general product overview page
-- Individual product pages (Red Bull, Booster, Monster)
-- UI elements for filtering, search, and user profiles
+- A homepage with a visual carousel  
+- A general product overview page  
+- Individual product pages (Red Bull, Booster, Monster)  
+- UI elements for filtering, search, and user profiles  
 
 However:
 
-- Search functionality is not connected to real data
 - Product data is hardcoded
 - Filtering is visual only
 - No backend or database is implemented
+- The system is not connected to real product data
+
 
 ---
 
@@ -52,7 +58,7 @@ However:
 
 - Category-based product browsing (visual)
 - Structured product pages with nutritional tables
-- Search bar (UI only)
+- Search functionality (limited to hardcoded products)
 - Filtering interface (UI concept)
 - Login/signup system using localStorage (basic simulation)
 - Profile page layout
@@ -78,19 +84,17 @@ Key findings:
 ## My Contributions
 
 ### UI & Design
-- Designed product pages
-- Focused on simplifying complex nutritional information
-- Created consistent layouts across the application
+- Designed product pages 
+- Creating consistent layouts across the application  
 
 ### Frontend Development
-- Implemented core page structure using HTML, CSS, and JavaScript
-- Built reusable UI components
-- Developed homepage carousel and navigation flow
+- Implementation of core page structure using HTML, CSS, and JavaScript   
+- Development of the homepage carousel and navigation flow  
 
 ### Features
-- Implemented search bar UI
-- Built product browsing structure
-- Created navigation between product pages
+- Implementation of the search functionality for predefined products  
+- Building the product browsing structure  
+- Creating the navigation between product pages 
 
 ---
 
@@ -144,10 +148,10 @@ Open in VS Code and run with Live Server.
 
 ## Limitations
 
-* Non-functional prototype
+* Prototype-level implementation
 * Static, hardcoded product data
 * No backend or API integration
-* Search and filtering are UI-only concepts
+* Search is limited to predefined products
 
 ---
 
