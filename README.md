@@ -1,4 +1,4 @@
-# NutriScan – Nutrition Understanding Prototype
+# NutriScan - Nutrition Understanding Prototype
 
 NutriScan is a frontend web prototype exploring how nutritional information can be presented in a more accessible and user-friendly way.
 
