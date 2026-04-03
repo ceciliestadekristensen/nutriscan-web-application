@@ -1,6 +1,6 @@
 # NutriScan - Nutrition Understanding Prototype
 
-NutriScan is a frontend web prototype exploring how nutritional information can be presented in a more accessible and user-friendly way.
+A frontend web prototype exploring how nutritional information can be communicated in a clearer, more accessible and user-friendly way.
 
 ---
 
@@ -20,12 +20,17 @@ NutriScan is a frontend web prototype exploring how nutritional information can 
 
 ## Overview
 
-Understanding nutrition labels can be difficult due to complex terminology, time constraints, and varying levels of health literacy.
+NutriScan was developed as a university project focused on improving how users understand nutritional information through interface design, visual hierarchy and structured content presentation.
 
-This project explores how a web interface can simplify nutritional information through clearer structure, visual hierarchy, and intuitive navigation.
+The project explores how a web-based solution can support users in making faster and more informed decisions when navigating nutrition labels and product information.
 
-**Note:**  
-This is a prototype, with focus on design, user experience, and concept development rather than a fully implemented system.
+Although the project is a prototype, it demonstrates how user research, interface design and frontend implementation can be combined into a coherent digital solution.
+
+---
+
+## Problem Statement
+
+> How can a web solution assist consumers in understanding and navigating within the scientific language of nutritional labels, while offering personal preferences and restrictions that align with dietary needs?
 
 ---
 
@@ -35,45 +40,50 @@ The prototype includes:
 
 - A homepage with a visual carousel  
 - A general product overview page  
-- Individual product pages (Red Bull, Booster, Monster)  
+- Individual product pages (Red Bull, Booster, Monster)
+- Search functionality for predefined products 
 - UI elements for filtering, search, and user profiles  
 
-However:
+The project was developed as a prototype and therefore has some limitations:
 
 - Product data is hardcoded
 - Filtering is visual only
-- No backend or database is implemented
-- The system is not connected to real product data
-
-
----
-
-## Problem Statement
-
-> How can a web solution support consumers in understanding nutritional labels while adapting to individual preferences and dietary needs?
+- No backend or live database is connected
+- Search only works across predefined content
 
 ---
 
-## Key Features (Prototype)
+## My Contribution
 
-- Category-based product browsing (visual)
-- Structured product pages with nutritional tables
-- Search functionality (limited to hardcoded products)
-- Filtering interface (UI concept)
-- Login/signup system using localStorage (basic simulation)
-- Profile page layout
+In this project, I worked primarily with frontend structure, interface design and implementation.
+
+My contribution included:
+
+### Frontend Development
+- Building page structure in HTML, CSS and JavaScript
+- Developing the homepage layout and navigation flow
+- Implementing search functionality for predefined products
+
+### UI and Interaction Design
+- Designing consistent page layouts
+- Creating a clearer visual hierarchy for nutritional information
+- Supporting usability through navigation and interface decisions
+
+### Research Translation
+- Contributing to the translation of user research into interface decisions
+- Working with a design approach informed by questionnaire data, interviews and computational thinking
 
 ---
 
-## Design & Research Foundation
+## Design and Research Foundation
 
-This project is based on a combination of quantitative and qualitative research:
+The project was based on both quantitative and qualitative research, including:
 
-- Questionnaire (63 participants)
+- Questionnaire responses from 63 participants
 - User interviews
-- Computational Thinking approach
+- Iterative design reflections
 
-Key findings:
+Key findings included:
 
 - Users struggle with complex terminology
 - Users want quick and clear information
@@ -81,20 +91,23 @@ Key findings:
 
 ---
 
-## My Contributions
+## Key Features
 
-### UI & Design
-- Designed product pages 
-- Creating consistent layouts across the application  
+- Product browsing structure
+- Search for selected products
+- Structured nutritional information pages
+- Filtering interface concept
+- Login and signup simulation using localStorage
+- Profile page layout
 
-### Frontend Development
-- Implementation of core page structure using HTML, CSS, and JavaScript   
-- Development of the homepage carousel and navigation flow  
+---
 
-### Features
-- Implementation of the search functionality for predefined products  
-- Building the product browsing structure  
-- Creating the navigation between product pages 
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- LocalStorage
 
 ---
 
@@ -127,12 +140,34 @@ Key findings:
 
 ---
 
-## Technologies
+## Report
 
-- HTML5
-- CSS3
-- JavaScript
-- LocalStorage (basic user simulation)
+This project was developed as part of a university course.
+
+**Full report:**
+[Download NutriScan Report](https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/report/nutriscan.pdf)
+
+The report includes:
+- User research and analysis
+- Design process and iteration
+- Implementation and system structure
+
+---
+
+## Learning Outcome
+
+This project strengthened my experience in:
+
+- Frontend development
+- User-centered interface design
+- Structuring information for usability
+- Translating research into digital design decisions
+
+---
+
+## Purpose
+
+The purpose of NutriScan was to explore how design and frontend development can support better understanding of nutritional information through a more intuitive and accessible web experience.
 
 ---
 
@@ -145,42 +180,3 @@ git clone https://github.com/your-username/nutriscan.git
 Open in VS Code and run with Live Server.
 
 ---
-
-## Limitations
-
-* Prototype-level implementation
-* Static, hardcoded product data
-* No backend or API integration
-* Search is limited to predefined products
-
----
-
-## Report
-
-This project was developed as part of a university course.
-
-**Full report:**
-[Download NutriScan Report](https://github.com/ceciliestadekristensen/nutriscan-web-application/raw/main/report/nutriscan.pdf)
-
-The report includes:
-
-* User research and analysis
-* Design process and iterations
-* System structure and implementation
-
----
-
-## Learning Outcome
-
-This project represents an early-stage development project focused on:
-
-* Understanding frontend fundamentals
-* Applying user-centered design principles
-* Translating research into interface design
-* Structuring information for better usability
-
----
-
-## Purpose
-
-The goal of NutriScan is to explore how design and technology can support better understanding of nutritional information and healthier decision-making.
