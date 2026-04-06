@@ -129,11 +129,11 @@ Key findings included:
   <tr>
     <td align="center">
       <img src="images/redbull.png" height="220"/><br>
-      <sub><b>Product Page</b></sub>
+      <sub><b>Nutritional Layout</b></sub>
     </td>
     <td align="center">
       <img src="images/booster.png" height="220"/><br>
-      <sub><b>Nutritional Layout</b></sub>
+      <sub><b>Product Page</b></sub>
     </td>
   </tr>
 </table>
